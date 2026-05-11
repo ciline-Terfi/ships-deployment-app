@@ -11,7 +11,7 @@ st.set_page_config(page_title="Ship Efficiency: Final Project", layout="wide")
 # --- DATA LOADING (COLLECTION) ---
 @st.cache_data
 def load_data():
-    df = pd.read_csv('/home/ciline/Téléchargements/ship_fuel_efficiency.csv')
+    df = pd.read_csv('ship_fuel_efficiency.csv')
     return df
 
 df = load_data()
